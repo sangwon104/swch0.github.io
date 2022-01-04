@@ -1,0 +1,37 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#열-세-번째-수업-이모저모" id="markdown-toc-열-세-번째-수업-이모저모">열 세 번째 수업 이모저모</a></li>
+  <li><a href="#links" id="markdown-toc-links">Links</a></li>
+</ul>
+
+<h1 id="열-세-번째-수업-이모저모">열 세 번째 수업 이모저모</h1>
+
+<ul>
+  <li>수업은 <code class="language-plaintext highlighter-rouge">2017-05-22 19:00:00 +0900</code>에 시작.</li>
+  <li>회고에 대한 이야기
+    <ul>
+      <li>회고는 소프트웨어 개발 프로세스에서 가장 중요한 활동 중 하나.</li>
+      <li>회고를 할 때 팀원간의 감정 공유도 매우 중요하다.
+        <ul>
+          <li>감사 메시지 남기기</li>
+          <li>서로, 스스로 칭찬하기</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>이번 수업 내용은 다소 까다롭고 난이도가 높았다.
+교수님 레파지토리를 보고 곱씹어 보는 시간이 필요할듯.</p>
+
+<h1 id="links">Links</h1>
+
+<ul>
+  <li><a href="https://github.com/slipp/jwp-spring-boot/tree/step2-refactoring">교수님 레파지토리</a></li>
+  <li>수업 자료
+    <ul>
+      <li><a href="https://nextstep.camp/courses/-KgDNT4rfavb_BzYLBXr/-KihchAcnJJxzb909TBT/lessons/-KihdwAUJKQvBDvkGCmQ">AOP 개념 및 로그인 기반 테스트</a></li>
+      <li><a href="https://nextstep.camp/courses/-KgDNT4rfavb_BzYLBXr/-KihchAcnJJxzb909TBT/lessons/-KkPXQQuTJB7TSIF7f4a">Spring AOP 및 LoggingAspect</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

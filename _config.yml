@@ -1,16 +1,16 @@
 # Site settings
-title: 기계인간 John Grib
-url: "https://hy43.github.io"
+title: hy43 wiki
+url: "https://johngrib.github.io"
 baseurl: ""
 description: >
-    기계인간 블로그
+    hY43 블로그
 
 # My information
-email: johngrib82@gmail.com
-author: 기계인간 John Grib
-profile: 유물론자
+email: hyde0401@gmail.com
+author: hY43
+profile: hY43
 twitter_username: John_Grib
-github_username: johngrib
+github_username: hy43
 comment-support: utterances
 
 # Build settings
@@ -41,7 +41,7 @@ disqus:
   id: johngrib
   shortname: johngrib
 utterances:
-  repo: johngrib/johngrib.github.io
+  repo: hy43/hy43.github.io
   issue-term: url
   label: Comment
   branch: master

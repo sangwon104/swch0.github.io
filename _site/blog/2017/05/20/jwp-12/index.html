@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Next JWP Study 12 - hy43 wiki</title>
+
+    <meta name="description" content="Spring Boot by Tests">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/blog/2017/05/20/jwp-12/">
+    <link rel="alternate" type="application/rss+xml" title="hy43 wiki" href="http://localhost:4000/feed.xml" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Next JWP Study 12">
+    <meta property="og:description" content="Spring Boot by Tests">
+    <meta property="og:image" content="http://localhost:4000/resource/johngrib.png">
+    <meta property="og:url" content="http://localhost:4000/blog/2017/05/20/jwp-12/">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@John_Grib" />
+    <meta name="twitter:url" content="http://localhost:4000/blog/2017/05/20/jwp-12/" />
+    <meta name="twitter:title" content="Next JWP Study 12" />
+    <meta name="twitter:description" content="Spring Boot by Tests" />
+
+    <link rel="apple-touch-icon" sizes="57x57"        href="/resource/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"        href="/resource/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"        href="/resource/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"        href="/resource/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"      href="/resource/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"      href="/resource/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"      href="/resource/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"      href="/resource/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"      href="/resource/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/resource/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"   href="/resource/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"   href="/resource/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"   href="/resource/icon/favicon-16x16.png">
+    <link rel="manifest" href="/resource/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/resource/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110224147-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110224147-1');
+    </script>
+
+
+
+</head>
+<header class="header">
+    <div>
+        <a class="site-title" href="/">hy43 wiki</a>
+    </div>
+    <div>
+        <a class="site-title-right" href="/about/">me</a>
+    </div>
+    <div>
+        <a id="random-button" class="site-title-right" href="/wiki/index/#random" onClick="if(typeof random === 'function')random()">random</a>
+    </div>
+    <div>
+        <a class="site-title-right" href="/wiki/index/">wiki</a>
+    </div>
+</header>
+<script>
+;(function(){
+    var isCtrl = false;
+
+    document.onkeyup=function(e){
+        if (e.which == 17) {
+            isCtrl = false;
+        }
+    }
+
+    document.onkeydown=function(e){
+        if(e.which == 17) {
+            isCtrl = true;
+        }
+        if(e.which == 82 && isCtrl == true) {
+            document.getElementById("random-button").click();
+        }
+    }
+})();
+</script>
+
+    <body>
+        <div class="page-content">
+            <div class="search">
+    <form role="search" method="get" action="/search/">
+         <input name="searchString" class="searchInput" placeholder=" 검색하세요" type="text">
+         <input type="submit" class="searchButton" value="Search">
+    </form>
+</div>
+            <div class="post">
+                <div class="post">
+    <header class="post-header">
+        <h1 class="page-title">
+            <a href="/blog/2017/05/20/jwp-12/"> Next JWP Study 12 </a>
+        </h1>
+        <p class="created-date">
+            2017.05.20
+        </p>
+        <div class="post-tag">
+    study jwp
+</div>
+
+        <h2>Spring Boot by Tests</h2>
+    </header>
+
+
+    <div class="toc">
+    </div>
+
+    <article class="post-content">
+        <h1 id="열-두-번째-수업-이모저모">열 두 번째 수업 이모저모</h1>
+
+<ul>
+  <li>수업은 <code class="language-plaintext highlighter-rouge">2017-05-18 19:00:00 +0900</code>에 시작.</li>
+  <li>오늘부터는 Spring Boot를 공부한다.</li>
+  <li>오늘의 목표는 교수님을 따라 Spring Boot 애플리케이션을 작성하고, 배포까지 하는 것.
+    <ul>
+      <li>그러나 프로젝트를 만드는 과정에서 너무 많은 시간이 소요되는 사람들이 몇 명 있었다.</li>
+      <li>그 중에 나도 있었다. (아마 내가 제일 오래 걸린듯 하다)</li>
+      <li>프로젝트 셋팅에 시간이 너무 오래 걸려, 수업 목표가 바뀌었다.
+        <ul>
+          <li>배포는 포기하고 애플리케이션 작성 완료를 목표로.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>IntelliJ에서 새로운 Spring Boot 프로젝트를 만들고 빌드하는 과정이 너무 힘들었다.
+    <ul>
+      <li>뭘 어떻게 해도 자꾸 에러가 발생했다.</li>
+      <li>두 시간 가까이 삽질을 했고 규진님의 도움으로 가까스로 셋팅을 완료하고 코딩에 들어갈 수 있었다.</li>
+      <li>이후엔 개인적으로 급한 일이 생겨 일찍 집으로 돌아갔다.</li>
+    </ul>
+  </li>
+  <li>책 소개 : <a href="https://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9788966260836">객체지향 설계와 실천</a>
+    <ul>
+      <li>오늘의 강의 내용은 이 책과 관련이 깊음.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="아마추어와-프로의-차이">아마추어와 프로의 차이</h1>
+
+<ul>
+  <li>
+    <p>책 소개: <a href="https://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&amp;ejkGb=KOR&amp;barcode=9791186805282">1만 시간의 재발견</a></p>
+  </li>
+  <li>심리학자 말콤 글래드웰이 만든 1만 시간의 법칙을 비판하는 책으로 보인다.</li>
+  <li>1만 시간의 법칙은 반례가 충분히 많기 때문에 과학 이론으로서는 결함이 많다고 생각해왔다. 기본적으로는 생각해왔던 것들과 큰 차이가 없을 것 같아서 책 자체에 큰 흥미가 생기진 않는다. 나중에 서점 가서 대충 훑어볼 생각.</li>
+</ul>
+
+<h1 id="과제-수행">과제 수행</h1>
+
+<ul>
+  <li>수업을 끝까지 듣지 못했으므로 무엇이 과제인지 알지 못한다.</li>
+  <li>따라서 수업 교재를 보고 수업 시간에 따라하지 못한 것을 완료할 것을 목표로 삼고 작업을 시작하였다.</li>
+  <li>그런데 이번 주말엔 이런 저런 일로 시간이 부족해서 과제에 쏟을 시간이 충분하지 못하여, 교수님의 저장소를 참고하고 따라 해 보는 정도로 만족하기로 했다.</li>
+  <li>브라우저를 열지 않고 웹 개발을 한다는 다소 모순된 것 같은 방식에 점차 익숙해지고 있다. 너무 좋다.</li>
+</ul>
+
+<h1 id="links">Links</h1>
+
+<ul>
+  <li>과제 완료
+    <ul>
+      <li><a href="https://github.com/slipp/jwp-spring-boot">참고 자료: 교수님의 저장소</a></li>
+      <li><a href="https://github.com/johngrib/test-spring-boot/tree/step1-johngrib">내 과제 수행 결과</a></li>
+    </ul>
+  </li>
+  <li>수업 자료
+    <ul>
+      <li><a href="https://nextstep.camp/courses/-KgDNT4rfavb_BzYLBXr/-KihchAcnJJxzb909TBT/lessons/-KjqDMIMMiyhMCImA8Hw">점진적 소프트웨어 개발 by 테스트</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+    </article>
+    <script>
+    ;(function() {
+        var tags = document.querySelectorAll('.post-tag');
+        if(tags == null || tags.length < 1) {
+            return;
+        }
+
+        for (var i = 0; i < tags.length; i++) {
+            var item = tags[i];
+            var tagList = item.innerHTML.trim();
+
+            if(/^\s*$/.test(tagList)) {
+                continue;
+            }
+            tagList = tagList.split(/\s+/)
+                .map(function(tag) {
+                    return `<a href="/tag/#${tag}">#${tag}</a>`;
+                })
+                .join(' ');
+            console.log(tagList);
+            tags[i].innerHTML = tagList;
+        }
+        return;
+    })();
+    ;(function() {
+        var post = document.querySelector('article.post-content');
+
+        if(post == null) {
+            return;
+        }
+
+        (function iterate_node(node) {
+
+            if (/^(?:p|ul|h\d|table)$/i.test(node.tagName)) {
+
+                node.innerHTML = link(node.innerHTML);
+
+            } else { // Node.ELEMENT_NODE
+                for (var i = 0; i < node.childNodes.length; i++) {
+                    iterate_node(node.childNodes[i]);
+                }
+            }
+        })(post);
+
+        function link(content) {
+            // (1) "\[[escape]]" 와 같이 앞에 "\"가 있다면 "\[\[escape\]\]" 로 바꾸기만 하고 링크는 생성하지 않는다.
+            content = content.replace(/\\\[\[(.+?)\]\]/g, '\\[\\[$1\\]\\]');
+            // (2) 다음과 같은 문자열을 <a href="/wiki/document">document-name</a> 으로 replace하여 링크를 만든다.
+            //  [[document]]{document-name}       => <a href="/wiki/document">document-name</a>
+            //  [[/document]]{document-name}      => <a href="/wiki/document">document-name</a>
+            //  [[/dir/document]]{document-name}  => <a href="/wiki/dir/document">document-name</a>
+            content = content.replace(/\[\[\/?([^\[\]]+?)\]\]\{([^\{\}]+?)\}/g, '<a href="/wiki/$1">$2</a>');
+            // (3) "[[document]]"가 있다면 <a href="/wiki/document">document</a> 와 같이 replace하여 링크를 만든다.
+            //  예제는 (2)와 거의 비슷하다.
+            content = content.replace(/\[\[\/?(.+?)\]\]/g, '<a href="/wiki/$1">$1</a>');
+            // (4) (1)에서 이스케이프한 문자열을 본래 표현하려 한 형식으로 되돌린다.
+            content = content.replace(/\\\[\\\[(.+?)\\\]\\\]/g, '[[$1]]');
+            return content;
+        }
+
+    })();
+</script>
+
+    
+    <div class="post-comments">
+    
+    
+        <script src="https://utteranc.es/client.js"
+            repo="hy43/hy43.github.io"
+            issue-term="url"
+            label="Comment"
+            branch="master"
+        async>
+        </script>
+    
+    </div>
+
+
+    <script async src="/js/toc-highlight.js"></script>
+</div>
+
+            </div>
+        </div>
+        <footer class="footer">
+    <div>
+
+    </div>
+
+    <script data-ad-client="ca-pub-3675948545737694" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</footer>
+    </body>
+</html>

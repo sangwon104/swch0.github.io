@@ -1,0 +1,88 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#개요" id="markdown-toc-개요">개요</a></li>
+  <li><a href="#설치-방법" id="markdown-toc-설치-방법">설치 방법</a></li>
+  <li><a href="#수식-사용-예제" id="markdown-toc-수식-사용-예제">수식 사용 예제</a></li>
+  <li><a href="#도구" id="markdown-toc-도구">도구</a></li>
+  <li><a href="#links" id="markdown-toc-links">Links</a></li>
+</ul>
+
+<h2 id="개요">개요</h2>
+
+<p>자신의 웹 페이지에서 LaTeX를 사용하고 싶다면 MathJax에서 제공하는 자바스크립트 라이브러리를 쓰면 된다.</p>
+
+<h2 id="설치-방법">설치 방법</h2>
+
+<p><a href="https://www.mathjax.org/">MathJax.org</a>의 <a href="https://www.mathjax.org/#gettingstarted">Getting Started</a> 페이지에서 제공하는 설명대로 다음의 코드를 자신의 웹 페이지에 추가하면 된다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>그러면 해당 웹 페이지에 있는 텍스트 중, <code class="language-plaintext highlighter-rouge">$</code><code class="language-plaintext highlighter-rouge">$</code>로 좌우가 감싸인 문자열은 LaTeX 문법으로 인식해, 수식으로 변환해준다.</p>
+
+<h2 id="수식-사용-예제">수식 사용 예제</h2>
+
+<ul>
+  <li>간단한 제곱
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="o">(</span><span class="nb"> a</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">)</span><span class="p">$$</span>
+</code></pre></div>    </div>
+    <p>\(( a^2 )\)</p>
+  </li>
+  <li>이차방정식의 근의 공식
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nb">x </span><span class="o">=</span><span class="nb"> </span><span class="p">{</span><span class="o">-</span><span class="nb">b </span><span class="nv">\pm</span><span class="nb"> </span><span class="nv">\sqrt</span><span class="p">{</span><span class="nb">b</span><span class="p">^</span><span class="m">2</span><span class="o">-</span><span class="m">4</span><span class="nb">ac</span><span class="p">}</span><span class="nb"> </span><span class="nv">\over</span><span class="nb"> </span><span class="m">2</span><span class="nb">a</span><span class="p">}$$</span>
+</code></pre></div>    </div>
+    <p>\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\)</p>
+  </li>
+  <li>행렬
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{pmatrix}</span>
+ 1 <span class="p">&amp;</span> a<span class="p">_</span>1 <span class="p">&amp;</span> a<span class="p">_</span>1<span class="p">^</span>2 <span class="p">&amp;</span> <span class="k">\cdots</span> <span class="p">&amp;</span> a<span class="p">_</span>1<span class="p">^</span>n <span class="k">\\</span>
+ 1 <span class="p">&amp;</span> a<span class="p">_</span>2 <span class="p">&amp;</span> a<span class="p">_</span>2<span class="p">^</span>2 <span class="p">&amp;</span> <span class="k">\cdots</span> <span class="p">&amp;</span> a<span class="p">_</span>2<span class="p">^</span>n <span class="k">\\</span>
+ <span class="k">\vdots</span>  <span class="p">&amp;</span> <span class="k">\vdots</span><span class="p">&amp;</span> <span class="k">\vdots</span> <span class="p">&amp;</span> <span class="k">\ddots</span> <span class="p">&amp;</span> <span class="k">\vdots</span> <span class="k">\\</span>
+ 1 <span class="p">&amp;</span> a<span class="p">_</span>m <span class="p">&amp;</span> a<span class="p">_</span>m<span class="p">^</span>2 <span class="p">&amp;</span> <span class="k">\cdots</span> <span class="p">&amp;</span> a<span class="p">_</span>m<span class="p">^</span>n    
+ <span class="nt">\end{pmatrix}</span>
+</code></pre></div>    </div>
+    <p>\(\begin{pmatrix}
+ 1 &amp; a_1 &amp; a_1^2 &amp; \cdots &amp; a_1^n \\
+ 1 &amp; a_2 &amp; a_2^2 &amp; \cdots &amp; a_2^n \\
+ \vdots  &amp; \vdots&amp; \vdots &amp; \ddots &amp; \vdots \\
+ 1 &amp; a_m &amp; a_m^2 &amp; \cdots &amp; a_m^n    
+ \end{pmatrix}\)</p>
+  </li>
+  <li>나눗셈
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nb">
+</span><span class="nv">\require</span><span class="p">{</span><span class="nb">enclose</span><span class="p">}</span><span class="nb">
+</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">array</span><span class="p">}{</span><span class="nb">r</span><span class="p">}</span><span class="nb">
+              </span><span class="m">13</span><span class="nb">  </span><span class="nv">\\</span><span class="o">[-</span><span class="m">3</span><span class="nb">pt</span><span class="o">]</span><span class="nb">
+</span><span class="m">4</span><span class="nb"> </span><span class="nv">\enclose</span><span class="p">{</span><span class="nb">longdiv</span><span class="p">}{</span><span class="m">52</span><span class="p">}</span><span class="nb"> </span><span class="nv">\\</span><span class="o">[-</span><span class="m">3</span><span class="nb">pt</span><span class="o">]</span><span class="nb">
+   </span><span class="nv">\underline</span><span class="p">{</span><span class="m">4</span><span class="p">}</span><span class="nv">\phantom</span><span class="p">{</span><span class="m">2</span><span class="p">}</span><span class="nb"> </span><span class="nv">\\</span><span class="o">[-</span><span class="m">3</span><span class="nb">pt</span><span class="o">]</span><span class="nb">
+              </span><span class="m">12</span><span class="nb">  </span><span class="nv">\\</span><span class="o">[-</span><span class="m">3</span><span class="nb">pt</span><span class="o">]</span><span class="nb">
+   </span><span class="nv">\underline</span><span class="p">{</span><span class="m">12</span><span class="p">}</span><span class="nb">
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">array</span><span class="p">}</span><span class="nb">
+</span><span class="p">$$</span>
+</code></pre></div>    </div>
+    <p>\(\require{enclose}
+\begin{array}{r}
+              13  \\[-3pt]
+4 \enclose{longdiv}{52} \\[-3pt]
+   \underline{4}\phantom{2} \\[-3pt]
+              12  \\[-3pt]
+   \underline{12}
+\end{array}\)</p>
+  </li>
+</ul>
+
+<h2 id="도구">도구</h2>
+
+<ul>
+  <li><a href="http://detexify.kirelabs.org/classify.html">detexify.kirelabs.org/classify.html</a>: 기호를 마우스로 그리면, 필기 인식으로 내가 찾는 기호와 유사한 기호의 목록과 latex 코드를 제안해준다. 매우 편리하다.</li>
+</ul>
+
+<h2 id="links">Links</h2>
+
+<ul>
+  <li><a href="https://www.mathjax.org/">MathJax.org</a></li>
+  <li><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax basic tutorial and quick reference</a>: 많은 예제가 있어 참고할 만하다.</li>
+  <li><a href="http://jsbin.com/zimuxulawu/edit?html,output">jsbin.com/zimuxulawu</a>: 여기서 연습해 볼 수 있다.</li>
+  <li><a href="http://detexify.kirelabs.org/classify.html">detexify.kirelabs.org/classify.html</a>: 내가 찾는 기호와 유사한 기호의 목록과 latex 코드를 제안해준다.</li>
+</ul>
+
+:ET

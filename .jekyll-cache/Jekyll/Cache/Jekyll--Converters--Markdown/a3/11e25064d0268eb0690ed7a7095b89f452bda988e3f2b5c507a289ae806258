@@ -1,0 +1,498 @@
+I"?<ul id="markdown-toc">
+  <li><a href="#아희-hello-world에-코멘트를-달아-보았다" id="markdown-toc-아희-hello-world에-코멘트를-달아-보았다">아희 "Hello, World!"에 코멘트를 달아 보았다.</a></li>
+  <li><a href="#주석" id="markdown-toc-주석">주석</a></li>
+  <li><a href="#links" id="markdown-toc-links">Links</a></li>
+</ul>
+
+<h2 id="아희-hello-world에-코멘트를-달아-보았다">아희 "Hello, World!"에 코멘트를 달아 보았다.</h2>
+
+<p>다음은 <a href="https://github.com/aheui/aheui.github.io/blob/master/_posts/2006-10-27-specification.ko.markdown#예제">아희 사이트</a>에서 복사해 온 "Hello, World!"소스 코드이다.</p>
+
+<pre><code class="language-aheui">밤밣따빠밣밟따뿌
+빠맣파빨받밤뚜뭏
+돋밬탕빠맣붏두붇
+볻뫃박발뚷투뭏붖
+뫃도뫃희멓뭏뭏붘
+뫃봌토범더벌뿌뚜
+뽑뽀멓멓더벓뻐뚠
+뽀덩벐멓뻐덕더벅
+</code></pre>
+
+<h2 id="주석">주석</h2>
+
+<ul>
+  <li>심심해서 아래와 같이 주석을 달아 보았다.</li>
+  <li>meaning의 push, dup, pop 등의 용어들은 내가 이 글을 쓰면서 임의로 선택한 키워드다.</li>
+  <li>초기에 선택된 스택은 '받침 없음' 이다.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>ind</th>
+      <th style="text-align: left">code</th>
+      <th>meaning</th>
+      <th>stack</th>
+      <th>comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">밤</code></td>
+      <td>push</td>
+      <td>[4]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">밣</code></td>
+      <td>push</td>
+      <td>[4, 8]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">따</code></td>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>[32]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">빠</code></td>
+      <td>dup</td>
+      <td>[32, 32]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">밣</code></td>
+      <td>push</td>
+      <td>[32, 32, 8]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">밟</code></td>
+      <td>push</td>
+      <td>[32, 32, 8, 9]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">따</code></td>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>[32, 32, 72]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뿌</code></td>
+      <td>dup</td>
+      <td>[32, 32, 72, 72]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뭏</code></td>
+      <td>pop</td>
+      <td>[32, 32, 72]</td>
+      <td>H 출력</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">붇</code></td>
+      <td>push</td>
+      <td>[32, 32, 72, 3]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">붖</code></td>
+      <td>push</td>
+      <td>[32, 32, 72, 3, 3]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">붘</code></td>
+      <td>push</td>
+      <td>[32, 32, 72, 3, 3, 3]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뚜</code></td>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>[32, 32, 72, 3, 9]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뚠</code></td>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>[32, 32, 72, 27]</td>
+      <td><code class="language-plaintext highlighter-rouge">ㄴ</code>무시 : 산술 연산의 받침은 무시</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">벅</code></td>
+      <td>push</td>
+      <td>[32, 32, 72, 27, 2]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">더</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[32, 32, 72, 29]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">덕</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[32, 32, 101]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뻐</code></td>
+      <td>dup</td>
+      <td>[32, 32, 101, 101]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">멓</code></td>
+      <td>pop</td>
+      <td>[32, 32, 101]</td>
+      <td>e 출력</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">벐</code></td>
+      <td>push</td>
+      <td>[32, 32, 101,  7]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">덩</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[32, 32, 108]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뽀</code></td>
+      <td>dup</td>
+      <td>[32, 32, 108, 108]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뽑</code></td>
+      <td>dup</td>
+      <td>[32, 32, 108, 108, 108]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뫃</code></td>
+      <td>pop</td>
+      <td>[32, 32, 108, 108]</td>
+      <td>l 출력</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뫃</code></td>
+      <td>pop</td>
+      <td>[32, 32, 108]</td>
+      <td>l 출력</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">볻</code></td>
+      <td>push</td>
+      <td>[32, 32, 108, 3]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">돋</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[32, 32, 111]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">빠</code></td>
+      <td>dup</td>
+      <td>[32, 32, 111, 111]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">맣</code></td>
+      <td>pop</td>
+      <td>[32, 32, 111]</td>
+      <td>o 출력</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">파</code></td>
+      <td>swap</td>
+      <td>[32, 111, 32]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">빨</code></td>
+      <td>dup</td>
+      <td>[32, 111, 32, 32]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">받</code></td>
+      <td>push</td>
+      <td>[32, 111, 32, 32, 3]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">밤</code></td>
+      <td>push</td>
+      <td>[32, 111, 32, 32, 3, 4]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뚜</code></td>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>[32, 111, 32, 32, 12]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">두</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[32, 111, 32, 44]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뭏</code></td>
+      <td>pop</td>
+      <td>[32, 111, 32]</td>
+      <td>,  출력</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뭏</code></td>
+      <td>pop</td>
+      <td>[32, 111]</td>
+      <td>space 출력</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뿌</code></td>
+      <td>dup</td>
+      <td>[32, 111, 111]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뻐</code></td>
+      <td>dup</td>
+      <td>[32, 111, 111, 111]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">벓</code></td>
+      <td>push</td>
+      <td>[32, 111, 111, 111, 8]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">더</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[32, 111, 111, 119]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">멓</code></td>
+      <td>pop</td>
+      <td>[32, 111, 111]</td>
+      <td>w 출력</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">멓</code></td>
+      <td>pop</td>
+      <td>[32, 111]</td>
+      <td>o 출력</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뽀</code></td>
+      <td>dup</td>
+      <td>[32, 111, 111]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">봌</code></td>
+      <td>push</td>
+      <td>[32, 111, 111, 3]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">도</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[32, 111, 114]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뫃</code></td>
+      <td>pop</td>
+      <td>[32, 111]</td>
+      <td>r 출력</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">밬</code></td>
+      <td>push</td>
+      <td>[32, 111, 3]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">탕</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>[32, 108]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">빠</code></td>
+      <td>dup</td>
+      <td>[32, 108, 108]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">맣</code></td>
+      <td>pop</td>
+      <td>[32, 108]</td>
+      <td>l 출력</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">붏</code></td>
+      <td>push</td>
+      <td>[32, 108, 8]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">투</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>[32, 100]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뭏</code></td>
+      <td>pop</td>
+      <td>[32]</td>
+      <td>d 출력</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">벌</code></td>
+      <td>push</td>
+      <td>[32, 5]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">더</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>[37]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">범</code></td>
+      <td>push</td>
+      <td>[37, 4]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">토</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>[33]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뫃</code></td>
+      <td>pop</td>
+      <td>[ ]</td>
+      <td>! 출력</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">박</code></td>
+      <td>push</td>
+      <td>[2]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">발</code></td>
+      <td>push</td>
+      <td>[2, 5]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">뚷</code></td>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>[10]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">멓</code></td>
+      <td>pop</td>
+      <td>[ ]</td>
+      <td>linefeed (10) 출력</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">희</code></td>
+      <td>end</td>
+      <td>[ ]</td>
+      <td><code class="language-plaintext highlighter-rouge">ㅎ</code>은 끝</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="links">Links</h2>
+
+<ul>
+  <li><a href="https://github.com/aheui/aheui.github.io/blob/master/_posts/2006-10-27-specification.ko.markdown">아희 specification</a></li>
+  <li><a href="https://github.com/aheui/aheui.github.io/blob/master/_posts/2006-10-27-specification.ko.markdown#예제">아희 사이트: Hello, World! 예제</a></li>
+</ul>
+
+:ET

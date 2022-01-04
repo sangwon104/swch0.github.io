@@ -1,6 +1,6 @@
 # Site settings
 title: hy43 wiki
-url: "https://johngrib.github.io"
+url: "https://hy43.github.io"
 baseurl: ""
 description: >
     hY43 블로그
@@ -9,7 +9,6 @@ description: >
 email: hyde0401@gmail.com
 author: hY43
 profile: hY43
-twitter_username: John_Grib
 github_username: hy43
 comment-support: utterances
 
@@ -38,8 +37,8 @@ collections:
 
 # Comment Service
 disqus:
-  id: johngrib
-  shortname: johngrib
+  id: hy43
+  shortname: hy43
 utterances:
   repo: hy43/hy43.github.io
   issue-term: url

@@ -8,7 +8,7 @@ tag     : java-sample
 toc     : true
 public  : true
 parent  : [[java]]
-latex   : false
+latex   : true
 ---
 * TOC
 {:toc}

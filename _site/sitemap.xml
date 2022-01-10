@@ -328,6 +328,23 @@
 
     
     <url>
+        <loc>http://localhost:4000/wiki/index/</loc>
+        
+            <lastmod>2021-07-25T18:00:13+09:00</lastmod>
+        
+
+        
+            <changefreq>daily</changefreq>
+        
+
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+    
+    <url>
         <loc>http://localhost:4000/wiki/mathjax-latex/</loc>
         
             <lastmod>2019-11-04T22:13:47+09:00</lastmod>
@@ -362,9 +379,43 @@
 
     
     <url>
-        <loc>http://localhost:4000/wiki/index/</loc>
+        <loc>http://localhost:4000/wiki/java/java-sample/</loc>
         
-            <lastmod>2022-01-04T11:46:06+09:00</lastmod>
+            <lastmod>2018-02-04T15:57:05+09:00</lastmod>
+        
+
+        
+            <changefreq>daily</changefreq>
+        
+
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+    
+    <url>
+        <loc>http://localhost:4000/wiki/java/java/</loc>
+        
+            <lastmod>2019-08-13T13:50:57+09:00</lastmod>
+        
+
+        
+            <changefreq>daily</changefreq>
+        
+
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+    
+    <url>
+        <loc>http://localhost:4000/wiki/tdd/index/</loc>
+        
+            <lastmod>2022-01-10T17:04:21+09:00</lastmod>
         
 
         

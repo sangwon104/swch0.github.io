@@ -7,8 +7,8 @@ updated : 2018-02-04 15:57:05 +0900
 tag     : local-caching
 toc     : true
 public  : true
-parent  : [[trade-off]]
-latex   : true
+parent  : trade-off
+latex   : false
 ---
 * TOC
 {:toc}

@@ -8,10 +8,13 @@ updated : 2022-01-09 15:51:22 +0900
 regenerate: true
 ---
 
-## [[java]]
+## Trade Off
+* [[trade-off]]
 
-* [[/java/java-sample]]
+## Java
 
-## [[tdd]]
+* [[java]]
 
-* [[/tdd/tdd-sample]]
+## TDD
+
+* [[tdd]]

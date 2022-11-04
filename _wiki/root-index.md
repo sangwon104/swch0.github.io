@@ -12,9 +12,10 @@ regenerate: true
 <small>프로젝트 중 기술 선택에 대한 고민을 기록합니다.</small>
 * [[trade-off]]
 
-## Java
+## [[java]]
 <small>Java와 관련된 내용을 기록합니다.</small>
-* [[java]]
+* [[/java/jls]] : Java Language Specification 번역.
+
 
 ## Spring Framework
 <small>스프링 프레임워크와 관련된 내용을 기록합니다.</small>

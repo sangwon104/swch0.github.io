@@ -1,6 +1,6 @@
 ---
 layout  : category
-title   : Java Language Specification
+title   : Java Doc
 summary :
 date    : 2018-01-20 17:43:19 +0900
 updated : 2019-08-13 13:50:57 +0900

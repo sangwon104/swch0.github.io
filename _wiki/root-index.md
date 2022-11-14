@@ -14,12 +14,12 @@ regenerate: true
 
 ## [[/tdd]]
 <small>TDD와 관련된 내용을 기록합니다.</small>
-* [[/tdd/martin-fowler]] : 마틴 파울러 블로그 번역
+* [[/tdd/martin-fowler]] : 마틴 파울러 블로그 번역.
 
 ## [[/java]]
 <small>Java와 관련된 내용을 기록합니다.</small>
 * [[/java/jls]] : Java Language Specification 번역.
-
+* [[/java/java-doc]] : Java Docs 번역.
 
 ## [[/spring]]
 <small>스프링 프레임워크와 관련된 내용을 기록합니다.</small>

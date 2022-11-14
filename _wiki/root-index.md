@@ -16,11 +16,11 @@ regenerate: true
 <small>TDD와 관련된 내용을 기록합니다.</small>
 * [[/tdd/martin-fowler]] : 마틴 파울러 블로그 번역
 
-## [[java]]
+## [[/java]]
 <small>Java와 관련된 내용을 기록합니다.</small>
 * [[/java/jls]] : Java Language Specification 번역.
 
 
-## [[spring]]
+## [[/spring]]
 <small>스프링 프레임워크와 관련된 내용을 기록합니다.</small>
 * [[/spring/topring]] : 토비의 스프링 읽기 모임

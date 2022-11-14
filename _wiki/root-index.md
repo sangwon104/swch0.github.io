@@ -8,12 +8,13 @@ updated : 2022-01-09 15:51:22 +0900
 regenerate: true
 ---
 
-## [[trade-off]]
+## Trade Off 
+<small>프로젝트 중 기술 선택에 대한 고민을 기록합니다.</small>
 * [[/trade-off/local-caching]]
 
 ## [[/tdd]]
 <small>TDD와 관련된 내용을 기록합니다.</small>
-* [[/tdd/martin-fowler]]
+* [[/tdd/martin-fowler]] : 마틴 파울러 블로그 번역
 
 ## [[/java]]
 <small>Java와 관련된 내용을 기록합니다.</small>

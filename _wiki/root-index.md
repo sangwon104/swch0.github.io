@@ -10,9 +10,9 @@ regenerate: true
 
 ## Trade Off 
 <small>프로젝트 중 기술 선택에 대한 고민을 기록합니다.</small>
-* [[trade-off]]
+* [[/trade-off]]
 
-## [[tdd]]
+## [[/tdd]]
 <small>TDD와 관련된 내용을 기록합니다.</small>
 * [[/tdd/martin-fowler]] : 마틴 파울러 블로그 번역
 

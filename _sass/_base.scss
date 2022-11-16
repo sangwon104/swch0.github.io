@@ -51,27 +51,6 @@ blockquote {
         color: $second-font-color;
     }
 }
-code,pre {
-    font-family:  $coding-font;
-}
-code {
-    color: inherit;
-    background-color: #ebedf0;
-    padding: 1px 3px;
-    border-radius: 3px;
-}
-pre {
-    overflow-x: auto;
-    padding: 10px 10px;
-}
-pre, pre code {
-    color: #fafafa;
-    background-color: #223;
-    // font-weight: 600;
-}
-pre code {
-    padding: 0;
-}
 .hide {
     display: none;
 }
@@ -146,3 +125,53 @@ h6 {
 .post-content h6 {
     &:before { content:"⠟"; }
 }
+
+.post-content .external-link {
+    &:after {
+        content: url("/resource/icon/external-link.svg");
+    }
+}
+
+.post-content .tagged-link {
+    &:before { content:"#"; }
+}
+
+.error-link {
+    &:after {
+        font-style: italic;
+        color: red;
+    }
+}
+
+.link-404 {
+    @extend .error-link;
+    &:after {
+        content: "[404 Not Found]"
+    }
+}
+
+.link-400 {
+    @extend .error-link;
+    &:after {
+        content: "[400 Bad Request]"
+    }
+}
+
+.link-408 {
+    @extend .error-link;
+    &:after {
+        content: "[408 Request Timeout]"
+    }
+}
+
+.link-500 {
+    @extend .error-link;
+    &:after {
+        content: "[500 Internal Server Error]"
+    }
+}
+
+.post-item:hover {
+  background-color: #FFF5FF;
+}
+

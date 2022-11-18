@@ -27,3 +27,7 @@ regenerate: true
 ## [[/spring]]
 <small>스프링 프레임워크와 관련된 내용을 기록합니다.</small>
 * [[/spring/topring]] : 토비의 스프링 읽기 모임
+
+## [[/uncategorized-contents]]
+<small>미분류 컨텐츠</small>
+* [[/uncategorized-contents/vim/vimtutor]] : vim tutorial 정리

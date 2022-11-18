@@ -17,16 +17,6 @@ blockquote { font-family: 'Noto Serif KR', serif; background: #FFFFFF; margin: 0
 
 blockquote p { line-height: 2; color: #503e2b; }
 
-code, pre { font-family: Consolas, "Courier New", Courier; }
-
-code { color: inherit; background-color: #ebedf0; padding: 1px 3px; border-radius: 3px; }
-
-pre { overflow-x: auto; padding: 10px 10px; }
-
-pre, pre code { color: #fafafa; background-color: #223; }
-
-pre code { padding: 0; }
-
 .hide { display: none; }
 
 .center { text-align: center; }
@@ -65,43 +55,31 @@ h6 { font-size: 1.0em; padding-left: 15px; font-weight: bold; font-style: italic
 
 .post-content h6:before { content: "⠟"; }
 
+.post-content .external-link:after { content: url("/resource/icon/external-link.svg"); }
+
+.post-content .tagged-link:before { content: "#"; }
+
+.error-link:after, .link-500:after, .link-408:after, .link-400:after, .link-404:after { font-style: italic; color: red; }
+
+.link-404:after { content: "[404 Not Found]"; }
+
+.link-400:after { content: "[400 Bad Request]"; }
+
+.link-408:after { content: "[408 Request Timeout]"; }
+
+.link-500:after { content: "[500 Internal Server Error]"; }
+
+.post-item:hover { background-color: #FFF5FF; }
+
 .wrapper { margin: 0 auto; }
 
 @media (min-width: 800px) { body { width: 800px; margin: auto; border: 1px solid #d0d0d0; } }
-
-div.gsc-control-cse { padding: 0; }
-
-.search form.gsc-search-box { margin: 0; }
-
-table.gsc-search-box { margin: 0px; }
-
-.header { background-color: #47146C; }
-
-.header:after { clear: both; content: ' '; display: block; }
-
-.header .site-title { float: left; text-decoration: none; color: #FFFFFF; line-height: 1.3; padding-left: 10px; font-style: italic; }
-
-.header .site-title-right { float: right; text-decoration: none; color: #FFFFFF; line-height: 1.3; padding-right: 10px; font-style: italic; }
 
 .page-content { background: #FAFAFA; }
 
 .page-content img { max-width: 100%; }
 
 .post { overflow-x: auto; padding: 5px; }
-
-.post table { border-collapse: collapse; border-spacing: 0; border-color: #000000; margin-bottom: 10px; }
-
-.post table td, .post table th { border: 1px solid #9e948a; padding: 5px 5px; }
-
-.post table th { font-weight: normal; color: #FFFFFF; background: #47146C; }
-
-.post table tr:nth-child(even) { background-color: #f4f4f4; }
-
-.post table tr:hover { background: #BEE7F6; }
-
-.toc { background: #EEE; }
-
-.post-tag a { color: #888888; text-decoration: none; }
 
 @media (max-width: 1120px) { .page-content .wrapper:before { display: none; } }
 
@@ -119,10 +97,6 @@ ul.tag-list li a { padding-right: 5px; text-decoration: none; }
 
 .section-nav { background-color: #FFF; margin: 5px 0; padding: 10px 30px; border: 1px solid #E8E8E8; border-radius: 3px; }
 
-.history-button { text-align: right; font-size: 0.8em; }
-
-.title-summary { font-size: 1.6em; font-style: italic; color: gray; }
-
 .visible { display: block; }
 
 .invisible { display: none; }
@@ -137,58 +111,52 @@ ul.tag-list li a { padding-right: 5px; text-decoration: none; }
 
 .tag-list li { display: inline-block; }
 
-div.search { background-color: #f6f5ea; width: 100%; position: relative; border-bottom: 1px solid #47146C; line-height: 1; }
-
-.searchInput { background-color: transparent; width: 100%; height: 100%; top: 0; position: relative; padding: 0px; padding-left: 5px; border: 0px; margin: 0px; font-size: 13px; direction: ltr; -webkit-appearance: textfield; border-radius: 0px; }
-
-.searchButton { border: 0px; border-radius: 0px; background-color: transparent; position: absolute; top: 0; right: 0; height: 100%; z-index: 2; }
-
-.post-header h2 { border: 0px; }
-
-.post-header p { margin: 0; }
-
-.post-header .page-title a { text-decoration: none; }
-
 .post-excerpt { color: #808094; }
 
 .post-sub-document { color: #000000; }
 
 /* based on Monokai Theme from https://github.com/richleland/pygments-css/blob/master/monokai.css */
-code { font-family: Consolas, "Courier New", Courier; }
+code { font-family: Consolas, "Courier New", Courier; color: inherit; background-color: #f3f4f6; padding: 1px 3px; border-radius: 3px; }
 
 code a { color: inherit; text-decoration: none; }
 
-div.highlight { font-size: 0.8em; line-height: 1.3; }
+pre { font-family: Consolas, "Courier New", Courier; overflow-x: auto; padding: 10px 10px; color: #fafafa; background-color: #202030; border: 1px solid #c6c6c6; }
 
-.highlight { /* Comment */ /* Error */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Punctuation */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.Single */ /* Comment.Special */ /* Generic.Emph */ /* Generic.Strong */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Literal.Number.Integer.Long */ /* Generic Heading & Diff Header */ /* Generic.Subheading & Diff Unified/Comment? */ /* Generic.Deleted & Diff Deleted */ /* Generic.Inserted & Diff Inserted */ }
+pre code { color: #fafafa; background-color: #202030; padding: 0; }
 
-.highlight .hll { background-color: #49483e; }
+div.highlight { font-size: 0.9em; line-height: 1.3; }
 
-.highlight .c { color: #75715e; }
+.highlight { /* Name.Builtin.Pseudo */ /* Comment */ /* Comment.Single */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.Special */ /* Error */ /* Generic.Deleted & Diff Deleted */ /* Generic.Emph */ /* Generic Heading & Diff Header */ /* Generic.Inserted & Diff Inserted */ /* Generic.Strong */ /* Generic.Subheading & Diff Unified/Comment? */ /* Literal.Number.Integer.Long */ /* Keyword */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal */ /* Literal.Date */ /* Literal.Number */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Name */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Decorator */ /* Name.Exception */ /* Name.Function */ /* Name.Entity */ /* Name.Label */ /* Name.Namespace */ /* Name.Constant */ /* Name.Tag */ /* Name.Variable */ /* Name.Other */ /* Operator */ /* Operator.Word */ /* Punctuation */ /* Name.Property */ /* Literal.String */ /* Literal.String.Single */ /* Literal.String.Double */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Regex */ /* Literal.String.Symbol */ /* Literal.String.Other */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Text.Whitespace */ }
 
-.highlight .err { color: #960050; background-color: #1e0010; }
+.highlight .bp { color: #f8f8f2; }
 
-.highlight .k { color: #66d9ef; }
+.highlight .c { color: #FED7BF; }
 
-.highlight .l { color: #ae81ff; }
-
-.highlight .n { color: #f8f8f2; }
-
-.highlight .o { color: #cc7832; }
-
-.highlight .p { color: #f8f8f2; }
+.highlight .c1 { color: #acca8b; }
 
 .highlight .cm { color: #fcba03; }
 
 .highlight .cp { color: #75715e; }
 
-.highlight .c1 { color: #acca8b; }
-
 .highlight .cs { color: #75715e; }
+
+.highlight .err { color: #960050; background-color: #1e0010; }
+
+.highlight .gd { color: #f92672; }
 
 .highlight .ge { font-style: italic; }
 
+.highlight .gi { color: #a6e22e; }
+
 .highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: #75715e; }
+
+.highlight .hll { background-color: #49483e; }
+
+.highlight .il { color: #ae81ff; }
+
+.highlight .k { color: #66d9ef; }
 
 .highlight .kc { color: #66d9ef; }
 
@@ -202,43 +170,13 @@ div.highlight { font-size: 0.8em; line-height: 1.3; }
 
 .highlight .kt { color: #66d9ef; }
 
+.highlight .l { color: #ae81ff; }
+
 .highlight .ld { color: #e6db74; }
 
+.highlight .lineno { color: #ffe5a0; }
+
 .highlight .m { color: #ae81ff; }
-
-.highlight .s { color: #e6db74; }
-
-.highlight .na { color: #a6e22e; }
-
-.highlight .nb { color: #f8f8f2; }
-
-.highlight .nc { color: #ff8080; }
-
-.highlight .no { color: #66d9ef; }
-
-.highlight .nd { color: #a6e22e; }
-
-.highlight .ni { color: #f8f8f2; }
-
-.highlight .ne { color: #a6e22e; }
-
-.highlight .nf { color: #bed6ff; }
-
-.highlight .nl { color: #f8f8f2; }
-
-.highlight .nn { color: #f8f8f2; }
-
-.highlight .nx { color: #a6e22e; }
-
-.highlight .py { color: #f8f8f2; }
-
-.highlight .nt { color: #f92672; }
-
-.highlight .nv { color: #bed6ff; }
-
-.highlight .ow { color: #f92672; }
-
-.highlight .w { color: #d0d0d0; }
 
 .highlight .mf { color: #ae81ff; }
 
@@ -248,13 +186,53 @@ div.highlight { font-size: 0.8em; line-height: 1.3; }
 
 .highlight .mo { color: #ae81ff; }
 
+.highlight .n { color: #f8f8f2; }
+
+.highlight .na { color: #a6e22e; }
+
+.highlight .nb { color: #f8f8f2; }
+
+.highlight .nc { color: #ff8080; }
+
+.highlight .nd { color: #a6e22e; }
+
+.highlight .ne { color: #a6e22e; }
+
+.highlight .nf { color: #bed6ff; }
+
+.highlight .ni { color: #f8f8f2; }
+
+.highlight .nl { color: #f8f8f2; }
+
+.highlight .nn { color: #f8f8f2; }
+
+.highlight .no { color: #66d9ef; }
+
+.highlight .nt { color: #26cff9; }
+
+.highlight .nv { color: #bed6ff; }
+
+.highlight .nx { color: #a6e22e; }
+
+.highlight .o { color: #cc7832; }
+
+.highlight .ow { color: #f92672; }
+
+.highlight .p { color: #f8f8f2; }
+
+.highlight .py { color: #f8f8f2; }
+
+.highlight .s { color: #e6db74; }
+
+.highlight .s1 { color: #e6db74; }
+
+.highlight .s2 { color: #e6db74; }
+
 .highlight .sb { color: #e6db74; }
 
 .highlight .sc { color: #e6db74; }
 
 .highlight .sd { color: #e6db74; }
-
-.highlight .s2 { color: #e6db74; }
 
 .highlight .se { color: #ae81ff; }
 
@@ -262,15 +240,11 @@ div.highlight { font-size: 0.8em; line-height: 1.3; }
 
 .highlight .si { color: #e6db74; }
 
-.highlight .sx { color: #e6db74; }
-
 .highlight .sr { color: #e6db74; }
-
-.highlight .s1 { color: #e6db74; }
 
 .highlight .ss { color: #e6db74; }
 
-.highlight .bp { color: #f8f8f2; }
+.highlight .sx { color: #e6db74; }
 
 .highlight .vc { color: #f8f8f2; }
 
@@ -278,15 +252,7 @@ div.highlight { font-size: 0.8em; line-height: 1.3; }
 
 .highlight .vi { color: #f8f8f2; }
 
-.highlight .il { color: #ae81ff; }
-
-.highlight .gu { color: #75715e; }
-
-.highlight .gd { color: #f92672; }
-
-.highlight .gi { color: #a6e22e; }
-
-.highlight .lineno { color: #ffe5a0; }
+.highlight .w { color: #d0d0d0; }
 
 .language-ascii-art { display: inline-block; letter-spacing: -0.1em; line-height: 1.0em; }
 
@@ -300,6 +266,7 @@ div.highlight { font-size: 0.8em; line-height: 1.3; }
 
 .contact a:hover { transition: background 0.3s ease; background: #666; }
 
+/* 접기/펼치기 접기/펼치기는 다음과 같이 html 태그를 사용하는 기능으로, 클릭해서 펼치고 접을 수 있다. <details><summary> 접는 내용 </summary></div></details> */
 summary { color: gray; }
 
 details { border: 1px dashed gray; padding: 2px; margin-bottom: 5px; }
@@ -312,6 +279,63 @@ details[open] > div { opacity: 0; animation-name: slideDown; animation-duration:
 .tag-item { padding: 1px; padding-right: 2px; }
 
 .tag-item :hover { background-color: gold; }
+
+/* 문서 본문에 포함되는 마크다운 테이블의 스타일. */
+.post table { border-collapse: collapse; border-spacing: 0; border-color: #000000; margin-bottom: 10px; }
+
+.post table td, .post table th { border: 1px solid #9e948a; padding: 5px 5px; }
+
+.post table th { font-weight: normal; color: #000000; background: #E6E6E6; }
+
+.post table tr:nth-child(even) { background-color: #f4f4f4; }
+
+.post table tr:hover { background: #BEE7F6; }
+
+.post li:hover { background: #F3F3F3; }
+
+.post li > ul > li:hover { background: #F6FBF2; }
+
+.post li > ul > li > ul > li:hover { background: #FAF0F4; }
+
+.post li > ul > li > ul > li > ul > li:hover { background: #F0F4FA; }
+
+.post li > ul > li > ul > li > ul > li > ul > li:hover { background: #E8F8F5; }
+
+/* 글 본문 상단의 메타데이터 */
+.post-header h2 { border: 0px; }
+
+.post-header p { margin: 0; }
+
+.post-header .page-title a { text-decoration: none; }
+
+.post-tag a { color: #888888; text-decoration: none; }
+
+.history-button { text-align: right; font-size: 0.8em; }
+
+.title-summary { font-size: 1.6em; font-style: italic; color: gray; }
+
+/* 사이트 최상단 메뉴 바 + 구글 검색 */
+.header { background-color: #47146C; }
+
+.header:after { clear: both; content: ' '; display: block; }
+
+.header .site-title { float: left; text-decoration: none; color: #FFFFFF; line-height: 1.3; padding-left: 10px; font-style: italic; }
+
+.header .site-title-right { float: right; text-decoration: none; color: #FFFFFF; line-height: 1.3; padding-right: 10px; font-style: italic; }
+
+#random-button:hover { cursor: pointer; }
+
+div.search { background-color: #f6f5ea; width: 100%; position: relative; border-bottom: 1px solid #47146C; line-height: 1; }
+
+.searchInput { box-sizing: border-box; background-color: transparent; width: 100%; height: 100%; top: 0; position: relative; padding: 0px; padding-left: 5px; border: 0px; margin: 0px; font-size: 13px; direction: ltr; -webkit-appearance: textfield; border-radius: 0px; }
+
+.searchButton { border: 0px; border-radius: 0px; background-color: transparent; position: absolute; top: 0; right: 0; height: 100%; z-index: 2; }
+
+div.gsc-control-cse { padding: 0; }
+
+.search form.gsc-search-box { margin: 0; }
+
+table.gsc-search-box { margin: 0px; }
 
 @media (min-width: 1700px) { ul#markdown-toc { position: fixed; top: 0; bottom: 0; left: calc(50vw + 410px); width: 380px; background-color: white; z-index: 9999; font-size: 0.8em; overflow-y: auto; overflow-x: hidden; border: 0px solid; line-height: 1.5; } }
 

@@ -20,6 +20,10 @@
   "size": 2
  },
  {
+  "name": "book",
+  "size": 1
+ },
+ {
   "name": "bot",
   "size": 1
  },
@@ -105,10 +109,14 @@
  },
  {
   "name": "tdd",
-  "size": 5
+  "size": 6
  },
  {
   "name": "telegram",
+  "size": 1
+ },
+ {
+  "name": "toy-projects",
   "size": 1
  },
  {

@@ -8,3 +8,4 @@
 * modify : modify contents
 * remove : remove contents
 * config : related wiki configuration
+* chore : generate..etc..

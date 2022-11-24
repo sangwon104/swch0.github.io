@@ -30,6 +30,10 @@ regenerate: true
 
 ## [[/toy-projects]]
 <small>toy project til</small>
+* [[/toy-projects/track-my-shipment]]
+
+## [[/book]]
+<small>읽은 책 모음</small>
 
 ## [[/uncategorized-contents]]
 <small>미분류 컨텐츠</small>

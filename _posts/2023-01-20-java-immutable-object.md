@@ -49,6 +49,7 @@ category: java
     class Money {
     	private final double amount;
     	private final Currency currency;
+        // ...
     }
     ```
     * Java는 우리에게 모든 primitive 타입의 변수에게 그렇듯 amount 변수의 값을 우리가 변경하지 못하도록 합니다.
@@ -58,6 +59,7 @@ category: java
 
     ```java
     class Money {
+        // ...
         public Money(double amount, Currency currency) {
             this.amount = amount;
             this.currency = currency;

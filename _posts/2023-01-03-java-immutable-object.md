@@ -44,11 +44,12 @@ category: java
     * 이제 우리는 변수의 내용 변경을 피하는 방법을 알게되었으니, 이를 활용해서 불변 객체의 api를 구성할 수 있습니다.
     * 불변 객체의 api를 구성한다는 것은 우리가 어떻게 그 api를 사용해도 내부의 값을 변경할 수 없도록 보장되어야 합니다.
     * 이를 위한 올바른 방식은 멤버변수(속성)를 선언할 때, final 키워드를 사용하는 것입니다.
+
     ```java
     class Money {
-    private final double amount;
-    private final Currency currency;
-    // ...
+    	private final double amount;
+    	private final Currency currency;
+    	// ...
     }
     ```
     * Java는 우리에게 모든 primitive 타입의 변수에게 그렇듯 amount 변수의 값을 우리가 변경하지 못하도록 합니다.

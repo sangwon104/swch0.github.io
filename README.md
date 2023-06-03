@@ -1,11 +1,33 @@
-# Vimwiki + Jekyll + Github.io
+---
+layout: page
+title: About
+permalink: /about/
+---
 
-> 이 블로그는 [이종립님의 위키 블로그](https://github.com/johngrib/johngrib-jekyll-skeleton)를 fork하여 생성한 블로그 입니다.
+## Theme Monos
+> Simple and lightweight theme for Jekyll
 
-## Commit Rules
-* category : related category
-* create : write new contents
-* modify : modify contents
-* remove : remove contents
-* config : related wiki configuration
-* chore : generate..etc..
+### Features
+- Responsive.
+- Syntax Highlight
+- Most optimized theme for tech blog.
+- Lightweight with minimum stylesheet.
+- Easy to customize.
+- Offers category menu.
+
+### _config.yml
+> Code block will look like this.
+```yml
+highlighter-theme: monokai //you can change your syntax color scheme.
+date_format: "%Y-%M-%D" //and date format.
+```
+
+### Screenshots
+#### Page
+![alt text](/public/img/screenshot-1.png)
+#### Articles
+![alt text](/public/img/screenshot-2.png)
+#### Page - Mobile
+![alt text](/public/img/screenshot-m1.png)
+#### Page - Articles
+![alt text](/public/img/screenshot-m2.png)
